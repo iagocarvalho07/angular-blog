@@ -1,13 +1,18 @@
-<p>home works!</p>
+<header>
+  <app-menu-bar></app-menu-bar>
+
+</header>
+
+
 <app-menu-tittle></app-menu-tittle>
 <div class="container-articles">
   <div class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card photoCover="https://placehold.co/600x400" [CardTittle]="'um CardTittle   QUALQUER'" [CardDescription]="'uma descrição qualquer com muitos conteudos e letras'"></app-big-card>
 
   </div>
   <div  class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
+    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
+    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
   </div>
 </div>
