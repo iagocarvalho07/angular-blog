@@ -3,8 +3,8 @@
 
 <app-menu-tittle></app-menu-tittle>
 <div class="container-articles">
-  <div class="articles__main">
-    <app-big-card id="1" photoCover="https://placehold.co/600x400" [CardTittle]="'um CardTittle   QUALQUER'" [CardDescription]="'uma descrição qualquer com muitos conteudos e letras'"></app-big-card>
+  <div *ngFor="let item of ValorantAgente" class="articles__main">
+    <app-big-card id="1" photoCover={{item.displayIcon}} CardTittle={{item.displayName}} [CardDescription]="'uma descrição qualquer com muitos conteudos e letras'"></app-big-card>
 
   </div>
   <div  class="articles__others">
