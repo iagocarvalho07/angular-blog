@@ -1,15 +1,26 @@
 <div  class="container__content">
-  <div class="content__cover">
-    <img src="{{ valorantAgenPerId.fullPortrait}}" alt="" srcset="">
+
+
+
+  <div>
+    <div class="content__cover">
+      <img src="{{ valorantAgenPerId.fullPortrait}}" alt="" srcset="">
+    </div>
+
+    <div class="content__title">
+      <h1>{{ valorantAgenPerId.displayName }}</h1>
+      <hr />
+    </div>
+
   </div>
-  <div class="content__title">
-    <h1>{{ valorantAgenPerId.displayName }}</h1>
-    <hr />
+  <div class="section2">
+    <div class="content__description">
+      <p>
+        {{ valorantAgenPerId.description }}
+      </p>
+    </div>
   </div>
-  <div class="content__description">
-    <!-- <a [routerLink="['']"> << VOLTAR </a> -->
-    <p>
-      {{ valorantAgenPerId.description }}
-    </p>
-  </div>
+</div>
+<div *ngFor="let item of valorantAgenPerId.abilities" class="conteiner-abilidades">
+  <app-habilities  abilityNumber={{item.slot}} abilitIcon={{item.displayIcon}} abilitiName={{item.displayName}} abilitiDescription={{item.description}}></app-habilities>
 </div>

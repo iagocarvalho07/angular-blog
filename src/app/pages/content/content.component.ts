@@ -6,11 +6,12 @@ import { Datum } from '../../data/model/valoranteModel';
 import { NgFor } from '@angular/common';
 import { AsyncPipe } from '@angular/common';
 import { map } from 'rxjs';
+import { HabilitiesComponent } from "./habilities/habilities.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [NgFor, AsyncPipe],
+  imports: [NgFor, AsyncPipe, HabilitiesComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css',
 })
