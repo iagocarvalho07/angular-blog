@@ -1,0 +1,74 @@
+.container-principal{
+  border: solid wheat;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+}
+
+.hero-img{
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.herobackgroud{
+
+  margin-top: 50px;
+  margin-left: 100px;
+  background: url("../../../assets/imgs/Ttyh6tr.png") no-repeat;
+  background-size: contain;
+  width: 500px;
+}
+
+.section-go-agents{
+
+  align-content: space-around;
+  margin-right: 50px;
+
+}
+
+.section-go-agents > h1{
+  font-size: 100px;
+
+  margin-bottom: 30px;
+}
+
+.section-go-agents > p{
+  width: 60%;
+}
+
+.section-go-agents > button{
+  margin-top: 30px;
+
+}
+
+
+.btn {
+  cursor: pointer;
+  border: 3px solid rgb(242, 33, 29);
+  font-family: "system-ui";
+  font-size: 18px;
+  color: rgb(247, 237, 237);
+  padding: 8px 30px;
+  transition: 589ms;
+  width: 181px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  background: rgb(0, 7, 13);
+  font-weight: 600;
+  --hover-bgc: #010a14;
+  --hover-color: #e7e9eb;
+  --hover-borderSize: 0px;
+  }
+
+  .btn:hover{
+  color: rgb(231, 233, 235);
+  width: 337px;
+  background: rgb(1, 10, 20) none repeat scroll 0% 0% / auto padding-box border-box;
+  border-color: rgb(204, 0, 105);
+  border-width: 0px;
+  border-style: solid;
+  }

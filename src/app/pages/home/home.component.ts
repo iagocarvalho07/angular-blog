@@ -7,14 +7,14 @@ import { Datum, Welcome } from '../../data/model/valoranteModel';
 import { valorantService } from '../../service/valorant.service';
 import { NgFor } from '@angular/common';
 import { AsyncPipe  } from '@angular/common';
-import { response } from 'express';
-import { Observable } from 'rxjs';
+import { CardtestComponent } from "../../components/cardtest/cardtest.component";
+
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MenuTittleComponent, BigCardComponent, SmallCardComponent, MenuBarComponent, NgFor, AsyncPipe ],
+  imports: [MenuTittleComponent, BigCardComponent, SmallCardComponent, MenuBarComponent, NgFor, AsyncPipe, CardtestComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -31,14 +31,9 @@ export class HomeComponent implements OnInit{
     this.ValoranteService.getAgents().subscribe(
       (data: Datum[]) => {
         this.ValorantAgente = data;
-        console.log(this.ValorantAgente)
+       // console.log(this.ValorantAgente)
       }
     )
-
-
-       // console.log(this.ValorantAgente)
-
-
   }
 
 

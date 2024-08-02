@@ -1,5 +1,9 @@
 .menu-tittle{
   color:white;
+  background: url("../../assets/imgs/valorant-riot-games.png") no-repeat 50% 50%;
+  background-size: cover ;
+  width: 100%;
+  height: 600px;
 }
 
 .menu-tittle > h1{
@@ -15,3 +19,6 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+

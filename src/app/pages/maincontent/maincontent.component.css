@@ -1,0 +1,43 @@
+.conainer-body{
+
+  width: 100%;
+  height: 600px;
+}
+
+.section1 {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.section1 > h1{
+  font-size: 50px;
+}
+
+
+.container-tittle{
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 20px;
+  margin-left: 120px;
+  justify-content: space-around;
+
+}
+
+.container-p{
+  align-content: space-between;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 40%;
+  height: 250px;
+}
+.container-p > p{
+  margin-top: 50px;
+}
+
+.containe-img{
+  background: url("../../assets/imgs/EGS_VALORANT_RiotGames_S1_2560x1440-5eff1895cb16cfb2bbbaaef1f6e90223.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 500px;
+}

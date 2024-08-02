@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { UUID } from 'node:crypto';
 
 @Component({
   selector: 'app-small-card',
@@ -12,5 +13,7 @@ export class SmallCardComponent {
   photoCover: String = ""
   @Input()
   CardTittle:String= ""
+  @Input()
+  id: String= "";
 
 }

@@ -3,13 +3,11 @@
 
 <app-menu-tittle></app-menu-tittle>
 <div class="container-articles">
-  <div *ngFor="let item of ValorantAgente" class="articles__main">
+ <!--<div *ngFor="let item of ValorantAgente" class="articles__main">
     <app-big-card id="1" photoCover={{item.displayIcon}} CardTittle={{item.displayName}} [CardDescription]="'uma descrição qualquer com muitos conteudos e letras'"></app-big-card>
+  <app-small-card id={{item.uuid}} photoCover={{item.displayIcon}} CardTittle={{item.displayName}}></app-small-card></div>
+  </div>-->
 
-  </div>
-  <div  class="articles__others">
-    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
-    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
-    <app-small-card photoCover="https://placehold.co/600x400" CardTittle="uma serie ou sei la oque qualqeru"></app-small-card>
-  </div>
+  <div *ngFor="let item of ValorantAgente" class="articles__others">
+    <app-cardtest id="{{item.uuid}}" img={{item.displayIcon}} description={{item.description}} name={{item.displayName}}></app-cardtest>
 </div>
